@@ -1,1 +1,180 @@
 
+type: custom:vertical-stack-in-card
+cards:
+  - type: custom:mushroom-person-card
+    entity: person.johann
+    layout: horizontal
+    fill_container: false
+    card_mod:
+      style: |
+        ha-card {
+          background-color: rgb(255,255,255,0.5);
+          #padding: 10px 0px 10px 45px !important;
+
+        }
+  - type: horizontal-stack
+    cards:
+      - type: custom:mushroom-chips-card
+        chips:
+          - type: entity
+            entity: sensor.johann_battery
+            icon: mdi:battery
+            card_mod:
+              style: |
+                ha-card {
+                  border: none;
+                  
+                }
+          - type: entity
+            entity: sensor.maison_distance_avec_johann
+            icon: mdi:map-marker-distance
+            card_mod:
+              style: |
+                ha-card {
+                  border: none;
+                }            
+        alignment: center
+        card_mod:
+          style: |
+            .chip-container {
+              --chip-spacing: 10px;
+              --chip-font-size: 10px;
+              --chip-background: rgba(255,255,255,0)
+            }   
+            ha-card {
+              padding-bottom: 5px !important;
+              padding-top: 5px !important;
+              justify-content: center;
+            }
+layout_options:
+  grid_columns: 2
+  grid_rows: 1
+card_mod:
+  style: |
+    ha-card {
+      --ha-card-background: rgb(0,0,0,0.1);
+    }
+
+
+
+
+type: custom:vertical-stack-in-card
+cards:
+  - type: custom:mushroom-person-card
+    entity: device_tracker.sylvaine
+    layout: horizontal
+    fill_container: false
+    card_mod:
+      style: |
+        ha-card {
+          background-color: rgb(255,255,255,0.5);
+          #padding: 0px 0px 0px 15px !important;
+
+        }
+  - type: horizontal-stack
+    cards:
+      - type: custom:mushroom-chips-card
+        chips:
+          - type: entity
+            entity: sensor.sylvaine_battery
+            icon: mdi:battery
+            card_mod:
+              style: |
+                ha-card {
+                  border: none;
+                  
+                }
+          - type: entity
+            entity: sensor.maison_distance_avec_sylvaine
+            icon: mdi:map-marker-distance
+            card_mod:
+              style: |
+                ha-card {
+                  border: none;
+                }            
+        alignment: center
+        card_mod:
+          style: |
+            .chip-container {
+              --chip-spacing: 10px;
+              --chip-font-size: 10px;
+              --chip-background: rgba(255,255,255,0)
+            }   
+            ha-card {
+              padding-bottom: 5px !important;
+              padding-top: 5px !important;
+              justify-content: center;
+            }
+layout_options:
+  grid_columns: 2
+  grid_rows: 1
+card_mod:
+  style: |
+    ha-card {
+      --ha-card-background: rgb(0,0,0,0.1);
+    }
+
+
+
+
+
+
+
+type: custom:vertical-stack-in-card
+cards:
+  - type: custom:mushroom-person-card
+    entity: person.clarisse
+    layout: horizontal
+    fill_container: false
+    card_mod:
+      style: |
+        ha-card {
+          background-color: rgb(255,255,255,0.5);
+          #padding: 0px 0px 0px 15px !important;
+
+        }
+  - type: horizontal-stack
+    cards:
+      - type: custom:mushroom-chips-card
+        chips:
+          - type: entity
+            entity: sensor.clarisse_battery
+            icon: mdi:battery
+            card_mod:
+              style: |
+                ha-card {
+                  border: none;
+                  
+                }
+          - type: entity
+            entity: sensor.maison_distance_avec_clarisse
+            icon: mdi:map-marker-distance
+            card_mod:
+              style: |
+                ha-card {
+                  border: none;
+                }            
+        alignment: center
+        card_mod:
+          style: |
+            .chip-container {
+              --chip-spacing: 10px;
+              --chip-font-size: 10px;
+              --chip-background: rgba(255,255,255,0)
+            }   
+            ha-card {
+              padding-bottom: 5px !important;
+              padding-top: 5px !important;
+              justify-content: center;
+            }
+layout_options:
+  grid_columns: 2
+  grid_rows: 1
+card_mod:
+  style: |
+    ha-card {
+      --ha-card-background: rgb(0,0,0,0.1);
+    }
+
+
+
