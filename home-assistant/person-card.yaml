@@ -1,3 +1,152 @@
+type: custom:stack-in-card
+mode: horizontal
+card_mod:
+  style: |
+    ha-card {
+      border: none;
+      background-color: rgb(255,255,255,0) !important;
+    }   
+cards:
+  - type: custom:stack-in-card
+    card_mod:
+      style: |
+        ha-card {
+          background-color: rgb(128,128,128,0.05) !important;        
+        }     
+    mode: vertical
+    cards:
+      - type: custom:mushroom-person-card
+        entity: person.sylvaine
+        fill_container: false
+        card_mod:
+          style: |
+            ha-card {
+              background-color: rgb(0,0,0,0.1) !important;
+              #padding: 0px 0px 0px 5px !important;
+              border: none;
+              
+            }        
+      - type: custom:mushroom-chips-card
+        chips:
+          - type: entity
+            entity: sensor.sylvaine_battery
+            card_mod:
+              style: |
+                ha-card {
+                  border: none;
+                  
+                }
+          - type: entity
+            entity: sensor.maison_distance_avec_sylvaine
+            icon: mdi:map-marker-distance
+            card_mod:
+              style: |
+                ha-card {
+                  border: none;
+                }       
+        alignment: center
+        card_mod:
+          style: |
+            .chip-container {
+              --chip-spacing: 5px;
+              --chip-font-size: 10px;
+              --chip-background: rgba(0,0,0,0) !important;
+            }   
+            ha-card {
+              padding-bottom: 5px !important;
+              #padding-top: 5px !important;
+              justify-content: center;
+              #background-color: rgb(255,255,0,0.5) !important;
+              padding-bottom: 10px !important;
+            }        
+  - type: custom:stack-in-card
+    mode: vertical
+    card_mod:
+      style: |
+        ha-card {
+          border: 1px solid lightgrey;
+          background-color: rgb(128,128,128,0.05) !important;
+        }   
+    cards:
+      - type: custom:button-card
+        card_mod:
+          style: |
+            ha-card {
+              border: none;
+              background-color: rgb(0,0,0,0.1) !important;
+            }       
+        entity: input_boolean.input_select_heredia_videosurveillance_state
+        name: Hérédia
+        state:
+          - value: 'off'
+            icon: mdi:camera-off-outline
+          - value: 'on'
+            icon: mdi:camera-outline
+            icon_color: red
+        tap_action:
+          action: none
+        styles:
+          grid:
+            - display: contents
+          img_cell:
+            - display: contents
+          icon:
+            - margin: 0
+            - margin-right: 0.1em
+            - width: 30px
+            - position: relative
+          name:
+            - font-size: 1.1em
+            - padding: 12px
+            - font-size: 14px
+            - font-weight: 510
+      - type: tile
+        features:
+          - type: select-options
+        entity: input_select.heredia_videosurveillance_choice
+        show_entity_picture: false
+        hide_state: true
+        vertical: false
+        card_mod:
+          style:
+            .: |
+              ha-card .content {
+                display: none !important;
+              }
+              ha-card {
+                border: none;
+                background-color: rgb(255,255,255,0) !important;
+              }                 
+    layout_options:
+      grid_columns: 2
+      grid_rows: 2
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 type: custom:vertical-stack-in-card
 cards:
